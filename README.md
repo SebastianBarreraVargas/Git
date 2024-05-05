@@ -1,4 +1,5 @@
 # Curso Git y GitHub [![Logo de la SCESI][logo-SCESI]][enlaceSCESI]
+# Clase 1
 
 ## ¿Qué es un control de versiones?
 Es un sistema para registrar cada cambio que se realiza en el código fuente de un proyecto. Basicamente permite un historial.
@@ -82,6 +83,103 @@ Cuando varios desarrolladores han hecho cambios en diferentes copias del reposit
 </p>
 
 Un beneficio clave de los DVCS es que permiten la colaboración en línea y fuera de línea. También proporcionan una mayor seguridad, ya que cada desarrollador tiene una copia completa del historial del proyecto.
+</details>
+
+## Iniciando un proyecto en Git
+
+Para crear un proyecto desde cero debemos seguir los siguientes pasos: 
+* git <font color="red">init</font> `<nombre de tu proyecto>`
+* cd `<nombre de tu proyecto>`
+
+En el caso que tu quisieras inicializar una carpeta ya existente entonces:
+* cd `<directorio existente>`
+* git <font color="red">init</font>
+
+## Los 3 estados de Git
+
+<div align="center">
+
+Estado       |Descripción|
+|---------------|:--------------|
+| Modified      |El archivo ha sido creado, eliminado o contiene cambios que no han sido marcados como confirmados.|
+| Staged        |El archivo ha sido marcado como preparado para ser confirmado en el repositorio local.|
+| Commited      |El archivo se encuentra grabado en el repositorio local. Esta acción recibe el nombre de commit|
+</div>
+
+## Cambiar el estado
+
+Una vez que crees archivos o modifiques los que tengas te encontraras en el estado `Modified`, entonces deberas pasar al estado `Staged`, los pasos para hacerlo son:
+
+* git <font color="red">status</font>
+
+Una vez que te ejecutes este comando deberia salirte algo como:
+
+```yaml
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+```
+
+Para este ejemplo llevaremos a `Staged` al archivo README.md
+
+* git add `README.md`
+
+Nuestro archivo esta listo para hacer el primer punto de guardado
+
+* git commit
+
+Se abrira una ventana en Visual Studio
+
+```yaml
+(en vez de este parentesis debes poner la descripcion de tu commit)
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+#
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#       modified:   README.md
+#
+```
+Guardas el archivo y lo cierras, despues de eso ya estaria hecho tu commit. Puedes revisar los commits con el comando:
+* git log
+
+## Pero... ¿Qué es un Commit?
+
+Es una especie de punto de guardado, veamoslo como los puntos de guardados de los videojuegos. En este caso guardan el estado de todos los archivos de tu repositorio en el momento en el que se hizo, va firmada con el autor, fecha y demas información util para los demas desarrolladores.
+
+Para hacer un commit los archivos deben haber estado previamente en la etapa de Staged.
+
+<p align="center">
+  <img src="https://media.licdn.com/dms/image/C4E22AQErd4dfzpgJQg/feedshare-shrink_800/0/1667848522109?e=2147483647&v=beta&t=wUNCJD38buj0A8_U-uc_9d0kjw7cIvbq9kMdTlRzcnU" alt="Imagen control de versiones distribuidos" width="350">
+</p>
+
+
+
+</details>
+<details>
+    <summary> <font color="red">Mas comandos!</font> </summary>
+  
+### Comandos variados que se llevaron durante las clases
+
+<div align="center">
+
+Comando       |Descripción|
+|---------------|:--------------|
+| Cambiar `tu_archivo` por .      |Esto aplica el comando a todos los archivos.|
+| git rm `tu_archivo`        |Este comando remueve un archivo de la lista de add.|
+| git commit -m "`(aqui va la info del commit)`"      |Es para hacer un commit sin abrir una ventana en VSC.|
+| git commit --amend -m "`<nuevo mensaje para el commit>`"        |Este comando cambia el mensaje del ultimo commit realizado.|
+| git commit -am "`<tu mensaje>`"      |este comando hara stage y commit de todos los archivos **<font color="red">rastreados</font> </summary>**|
+</div>
+
 </details>
 
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
