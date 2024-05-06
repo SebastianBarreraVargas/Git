@@ -199,5 +199,45 @@ Comando       |Descripción|
 
 </details>
 
+# Clase 2
+## ¿Qué es una rama?
+Es una versión separada del repositorio principal. Al ser una linea de desarrollo independiente cualquier cambio que hagas en la rama se mantendra separado de las demas, hace mas dificil que el codigo inestable se fusione con el principal. Ademas permiten un desarrollo no lineal y colaborativo.
+
+<p align="center">
+  <img src="https://www.espai.es/blog/wp-content/uploads/2021/05/desarrollo-con-ramas-git.jpg" alt="Imagen control de versiones distribuidos" width="450">
+</p>
+
+* Cuando quieras agregar una nueva caracteristica o corregir errores, sin importar lo pequeños que sean deberias crear una nueva rama para encapsular tus cambios.
+
+* Cuando el trabajo este completo puede fusionarse con la rama principal.
+
+## Creación de una rama
+
+ :warning: Para crear una rama debes tener almenos un commit en el repositorio!! La rama se creara en base al ultimo commit de la rama en que creaste la nueva rama.
+
+Para crear una rama usaremos el comando:
+* git branch `nombre_rama`
+
+Cambiamos a nuestra nueva rama:
+* git switch `nombre_rama`
+
+<details>
+    <summary> Abreme para ver mas comandos! </summary>
+  
+### Comandos variados que se llevaron durante la clase
+
+<div align="center">
+
+Comando       |Descripción|
+|---------------|:--------------|
+| git switch -c `nombre_rama`      |Crea la rama y automaticamente te lleva a ella.|
+| git checkout -b `nombre_rama`      |Un comando mas que crea la rama y automaticamente te lleva a ella.|
+| git checkout `nombre_rama`      |Un comando mas que te cambia a la rama `nombre_rama`.|
+
+</div>
+
+</details>
+
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
