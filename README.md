@@ -384,6 +384,8 @@ Debemos ir al apartado de `Code` dentro de nuestro repositorio, ahora al icono v
 
 Usaremos un nuevo comando llamado git push, nos permite sincronizar nuestros cambios del repositorio local a nuestro repositorio remoto.
 
+No necesariamente debe ser la rama main.
+
 * git push `nombre_repo_remoto` `rama_a_subirse`
 
 ## Clonar repositorios
@@ -405,7 +407,13 @@ Comando       |Descripción|
 | Forks      |Herramienta para aportar a un codigo que no te pertenece, puedes clonartelo y añadirlo a tus repositorios, puedes subir tus cambios para que el propietario pueda añadirlo si quiere.|
 |Issues       |Es abrir un hilo, en el que comentas que errores puede tener el codigo y que se puedan realizar cambios en base a eso.|
 |git push -f `nombre_repo_remoto` `rama_a_subirse`       |Forzara a sincronizar los cambios con el repositorio remoto (no recomendado).|
-|git push -u `nombre_repo_remoto` `rama_a_subirse`       |Sube tus cambios a la rama “main” del repositorio “origin” y establece esa rama como la rama por defecto para futuros comandos git push. .|
+|git push -u `nombre_repo_remoto` `rama_a_subirse`       |Sube tus cambios a la rama “main” del repositorio “origin” y establece esa rama como la rama por defecto para futuros comandos git push.|
+|git push -all `nombre_repo_remoto`  |Sincroniza todas las ramas con el repo remoto.|
+|git remote prune `nombre_repo_remoto`|Borra las ramas del repositorio local que ya no existen en base al repositorio remoto.|
+|git fetch|Se utiliza para descargar todos los datos de un repositorio remoto que no están presentes en tu repositorio local. Esto incluye nuevas ramas, actualizaciones a ramas existentes y otros cambios.|
+|git branch -a|Lista todas las ramas, tanto las locales como las remotas.|
+|git tag `nombre-de-la-etiqueta` `identificador-del-commit`|Agregas una etiqueta a un commit especifico|
+|git remote remove `<nombre_repo_remoto>`|Elimina un alias de repositorio remoto|
 </div>
 
 </details>
