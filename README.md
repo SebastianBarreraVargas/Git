@@ -263,6 +263,19 @@ Usamos el comando:
 
 * git merge `tu_rama` --no-ff
 
+## Conflictos en Git
+
+Ocurren al querer fusionar a una rama que realizo cambios justo en las mismas lineas del fichero al que queremos fusionarnos.
+
+(insertar imagen aqui)
+
+### Resolviendo conflictos
+Cuando nos ocurra esto debemos seleccionar con que cambio nos quedaremos, aunque tambien podriamos fusionar ambos a la rama con las opciones que nos ofrece Visual Studio.
+
+<p align="center">
+  <img src="https://www.jorgeacortes.com/blog/wp-content/uploads/2019/01/merge-conflict-solve-vs-code.gif" alt="Gif conflictos" width="650">
+</p>
+
 <details>
     <summary> Abreme para ver mas comandos! </summary>
   
