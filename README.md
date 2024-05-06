@@ -325,13 +325,13 @@ Estan hospedados en un servidor y serviran de punto de sincronización entre dif
 ### Buscar perfiles
 Para buscar perfiles debemos seguir los siguientes pasos
 
-<p float="left">
-  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-06%20102952.png" width="100" />
-  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-06%20103125.png" width="100" /> 
+<p float="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-06%20102952.png" width="300" />
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-06%20103125.png" width="300" /> 
 </p>
-<p float="left">
-  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-06%20103201.png" width="100" />
-  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-06%20103247.png" width="100" /> 
+<p float="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-06%20103201.png" width="350" />
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-06%20103247.png" width="350" /> 
 </p>
 
 La herramienta de busqueda en GitHub te puede servir para buscar contenido de otras personas y asi inspirarte en ellos y adaptar su codigo al tuyo.
@@ -352,20 +352,20 @@ Area       |Descripción|
 Aqui se puede ver la estructura de la pagina code:
 
 <p align="center">
-  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/ApartadoDeCode.jpg" alt="Imagen Code" width="400">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/ApartadoDeCode.jpg" alt="Imagen Code" width="700">
 </p>
 
 ## Empezando un nuevo repositorio
 Primero iremos a la pestaña `Create new` en Git Hub y elegiremos `New repository`
 
 <p align="center">
-  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Nuevo%20repositorio.png" alt="Imagen nuevo repo" width="300">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Nuevo%20repositorio.png" alt="Imagen nuevo repo" width="150">
 </p>
 
 Llenaremos los datos con la informacion de nuestro repositorio, ademas podremos elegir un .gitignore y una licencia.
 
 <p align="center">
-  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Ejemplo%20nuevo%20repo.png" alt="Imagen ejemplo de nuevo repo" width="300">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Ejemplo%20nuevo%20repo.png" alt="Imagen ejemplo de nuevo repo" width="500">
 </p>
 
 ## Sincronizando nuestro repositorio
