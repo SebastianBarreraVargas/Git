@@ -311,6 +311,97 @@ Comando       |Descripción|
 
 </details>
 
+# Clase 3
+
+## Repositorios remotos
+Estan hospedados en un servidor y serviran de punto de sincronización entre diferentes repositorios locales.
+
+<p align="center">
+  <img src="https://edea.juntadeandalucia.es/bancorecursos/file/cb77d5d9-b0a7-4c50-98f4-28073b221392/1/es-an_2021062412_9203322.zip/Operaciones_Basicas_02.jpg" alt="Imagen Repos" width="300">
+</p>
+
+## Navegando por GitHub
+
+### Buscar perfiles
+Para buscar perfiles debemos seguir los siguientes pasos
+
+(introducir Imagen)
+
+La herramienta de busqueda en GitHub te puede servir para buscar contenido de otras personas y asi inspirarte en ellos y adaptar su codigo al tuyo.
+
+<div align="center">
+
+Area       |Descripción|
+|---------------|:--------------|
+|Code       |Sirve para ver las ramas e intercalar entre ellas, podras ver tus archivos, agregar archivos y añadir codigo.|
+|Pull Requests       |Por asi decirlo es como un hilo de Twitter (X) en el cual se sigue una conversación sobre un topico en especifico.|
+|Actions       |Es "una forma de automatización" cuando hagas ciertas acciones se ejecutaran otras acciones, se utiliza para el despliegue.|
+|Projects       |Podemos crear un "Canvan" ver que tareas se haran respecto a una cierta historia de usuario.|
+|Seguridad       |Sirve para administrar permisos, podremos por ejemplo modificar que cierta rama no la pueda modificar cualquier persona.|
+|Wiki       |Documentacion mas extensa que un README.|
+|Insights       |Nos permite ver estadisticas de nuestros repositorios.|
+|Settings       |Podemos configurar diferentes cosas de nuestro repositorio, solamente esta disponible si somos el dueño del repositorio.|
+</div>
+
+## Empezando un nuevo repositorio
+Primero iremos a la pestaña `Create new` en Git Hub y elegiremos `New repository`
+
+(insertar imagen)
+
+Llenaremos los datos con la informacion de nuestro repositorio, ademas podremos elegir un .gitignore y una licencia.
+
+(insertar imagen)
+
+## Sincronizando nuestro repositorio
+Usaremos el siguiente comando en Git para poder sincronizarnos:
+
+* git remote add `nombre_repo_remoto` `url_repo`
+
+### ¿Como obtengo la `url_repo`?
+
+Debemos ir al apartado de `Code` dentro de nuestro repositorio, ahora al icono verde que dice `<> Code` y podemos copiar el vinculo `HTTPS` para nuestro comando git remote. Luego de vincular tu codigo podras usar el siguiente comando para ver las conexiones remotas que tienes:
+
+* git remote -v
+
+<details>
+    <summary> Abreme si quieres vincular tu repositorio con una clave SSH! </summary>
+
+## Vincular un repositorio con clave SSH
+
+### Crear la key
+* ssh-keygen -t rsa -b 4096 `tucorreo@gmail.com`
+* Al crearlo podras elegir una passphrase
+### Pondremos a ejecutar la llave
+* eval "$(ssh-agent -s)"
+### Añadir la llave
+* ssh-add~/.ssh/id_rsa
+* Copias del portapapeles el id_rsa.pub
+* Pegas en la seccion key de tu repositorio.
+
+</details>
+
+## Sincronizando repositorios
+
+Usaremos un nuevo comando llamado git push, nos permite sincronizar nuestros cambios del repositorio local a nuestro repositorio remoto.
+
+* git push `nombre_repo_remoto` `rama_a_subirse`
+
+<details>
+    <summary> Abreme para ver mas información! </summary>
+  
+### Datos o comandos variados llevados durante la clase
+
+<div align="center">
+
+Comando       |Descripción|
+|---------------|:--------------|
+| Forks      |Herramienta para aportar a un codigo que no te pertenece, puedes clonartelo y añadirlo a tus repositorios, puedes subir tus cambios para que el propietario pueda añadirlo si quiere.|
+|Issues       |Es abrir un hilo, en el que comentas que errores puede tener el codigo y que se puedan realizar cambios en base a eso.|
+|git push -f `nombre_repo_remoto` `rama_a_subirse`       |Forzara a sincronizar los cambios con el repositorio remoto (no recomendado).|
+|git push -u `nombre_repo_remoto` `rama_a_subirse`       |Sube tus cambios a la rama “main” del repositorio “origin” y establece esa rama como la rama por defecto para futuros comandos git push. .|
+</div>
+
+</details>
 
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
