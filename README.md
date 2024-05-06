@@ -252,7 +252,16 @@ error: The branch 'branch_name' is not fully merged.
 If you are sure you want to delete it, run 'git branch -D branch_name'.
 ```
 
+## Merge No Fast-Forward
 
+### ¿Qué es un fast-forward?
+Cuando haces una fusión y los commits de esta rama estan directamente delante de la rama actual, Git hara por defecto un "fast-forward merge", lo que significa que simplemente movera el puntero de la rama actual hacia adelante ya que no hay divergencia de codigo entre las dos ramas.
+### ¿Qué nos permite hacer?
+Nos permite hacer merges creando un commit para indicar que se hizo una fusión.
+
+Usamos el comando:
+
+* git merge `tu_rama` --no-ff
 
 <details>
     <summary> Abreme para ver mas comandos! </summary>
@@ -270,6 +279,9 @@ Comando       |Descripción|
 | git merge --no-commit      |Evita que se haga commit automaticamente.|
 | git branch -D `nombre_rama`      |Fuerza la eliminación de una rama.|
 | git branch -a      |Nos permite visualizar todas las ramas incluso las que estan en el remoto.|
+| git log --oneline      |Nos permite visualizar el historial de commits pero solo mostrandonos los nombres.|
+| git log --graph      |Nos permite visualizar el historial de commits con una ayuda grafica.|
+| git log --graph --oneline      |Nos permite visualizar el historial de commits con una combinacion de las dos anteriores opciones.|
 </div>
 
 </details>
