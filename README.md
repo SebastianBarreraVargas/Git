@@ -41,7 +41,7 @@ Es una especie de almacen para guardar los archivos con diferentes versiones, ad
 **Abra las pestañas para ver mas información acerca del control de versiones.**
 
 <details>
-    <summary> Sistemas de control de versiones locales </summary>
+    <summary> Sistemas de control de versiones locales  :exclamation: :exclamation:  </summary>
 
   ### Sistemas de control de versiones locales
   Los sistemas de control de versiones locales son la forma más sencilla de tener un control de versiones y los utilizan principalmente los desarrolladores individuales en vez de los equipos. En un sistema de control de versiones local, todos los datos del proyecto se almacenan en una sola computadora y los cambios realizados en los archivos del proyecto se guardan localmente. 
@@ -55,7 +55,7 @@ Una de las herramientas de control de versiones locales más populares fue un si
 Aunque los sistemas de control de versiones locales pueden ser útiles para los desarrolladores individuales, tienen limitaciones significativas cuando se trata de la colaboración en equipo. Por ejemplo, no permiten que varios desarrolladores trabajen en el mismo proyecto al mismo tiempo de manera eficiente. Además, dado que todos los datos se almacenan localmente, si la computadora del desarrollador falla, se puede perder todo el historial del proyecto
 </details>    
 <details>
-    <summary> Sistemas de control de versiones centralizados </summary>
+    <summary> Sistemas de control de versiones centralizados  :exclamation: :exclamation:</summary>
 
 ### Sistemas de control de versiones centralizados
 Los Sistemas de Control de Versiones Centralizados (CVCS) son un tipo de sistema de control de versiones donde hay un único “servidor” que contiene todas las versiones de los archivos. Este servidor centralizado almacena todos los archivos versionados, y varios “clientes” descargan los archivos desde ese lugar central.
@@ -72,7 +72,7 @@ Aunque los CVCS facilitan la colaboración y permiten un seguimiento fácil de q
 
 </details>
 <details>
-    <summary> Sistemas de control de versiones distribuidos </summary>
+    <summary> Sistemas de control de versiones distribuidos  :exclamation: :exclamation:  </summary>
   
 ### Sistemas de control de versiones distribuidos
 Los Sistemas de Control de Versiones Distribuidos (DVCS) son un tipo de sistema de control de versiones donde cada desarrollador tiene su propio repositorio local con un historial completo de cambios. Esto significa que cada copia del código base es un repositorio completo.
@@ -179,7 +179,7 @@ Date:   Sun May 5 18:20:18 2024 -0400
 ```
 
 <details>
-    <summary> Abreme para ver mas comandos! </summary>
+    <summary> Abreme para ver mas comandos!  :exclamation: :exclamation:</summary>
   
 ### Comandos variados que se llevaron durante la clase
 
@@ -278,7 +278,7 @@ Usamos el comando:
 Ocurren al querer fusionar a una rama que realizo cambios justo en las mismas lineas del fichero al que queremos fusionarnos.
 
 <p align="center">
-  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/image.jpg" alt="Imagen tiburón" width="450">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/image.jpg" alt="Imagen tiburón" width="300">
 </p>
 
 ### Resolviendo conflictos
@@ -289,7 +289,7 @@ Cuando nos ocurra esto debemos seleccionar con que cambio nos quedaremos, aunque
 </p>
 
 <details>
-    <summary> Abreme para ver mas comandos! </summary>
+    <summary> Abreme para ver mas comandos!  :exclamation: :exclamation:</summary>
   
 ### Comandos variados que se llevaron durante la clase
 
@@ -317,7 +317,7 @@ Comando       |Descripción|
 Estan hospedados en un servidor y serviran de punto de sincronización entre diferentes repositorios locales.
 
 <p align="center">
-  <img src="https://edea.juntadeandalucia.es/bancorecursos/file/cb77d5d9-b0a7-4c50-98f4-28073b221392/1/es-an_2021062412_9203322.zip/Operaciones_Basicas_02.jpg" alt="Imagen Repos" width="300">
+  <img src="https://static.platzi.com/media/user_upload/Git%20push-88e4f9c0-01af-4253-b351-5e9a036e5a43.jpg" alt="Imagen Repos" width="300">
 </p>
 
 ## Navegando por GitHub
@@ -325,7 +325,14 @@ Estan hospedados en un servidor y serviran de punto de sincronización entre dif
 ### Buscar perfiles
 Para buscar perfiles debemos seguir los siguientes pasos
 
-(introducir Imagen)
+<p float="left">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-06%20102952.png" width="100" />
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-06%20103125.png" width="100" /> 
+</p>
+<p float="left">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-06%20103201.png" width="100" />
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-06%20103247.png" width="100" /> 
+</p>
 
 La herramienta de busqueda en GitHub te puede servir para buscar contenido de otras personas y asi inspirarte en ellos y adaptar su codigo al tuyo.
 
@@ -342,15 +349,24 @@ Area       |Descripción|
 |Insights       |Nos permite ver estadisticas de nuestros repositorios.|
 |Settings       |Podemos configurar diferentes cosas de nuestro repositorio, solamente esta disponible si somos el dueño del repositorio.|
 </div>
+Aqui se puede ver la estructura de la pagina code:
+
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/ApartadoDeCode.jpg" alt="Imagen Code" width="400">
+</p>
 
 ## Empezando un nuevo repositorio
 Primero iremos a la pestaña `Create new` en Git Hub y elegiremos `New repository`
 
-(insertar imagen)
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Nuevo%20repositorio.png" alt="Imagen nuevo repo" width="300">
+</p>
 
 Llenaremos los datos con la informacion de nuestro repositorio, ademas podremos elegir un .gitignore y una licencia.
 
-(insertar imagen)
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Ejemplo%20nuevo%20repo.png" alt="Imagen ejemplo de nuevo repo" width="300">
+</p>
 
 ## Sincronizando nuestro repositorio
 Usaremos el siguiente comando en Git para poder sincronizarnos:
@@ -364,7 +380,7 @@ Debemos ir al apartado de `Code` dentro de nuestro repositorio, ahora al icono v
 * git remote -v
 
 <details>
-    <summary> Abreme si quieres vincular tu repositorio con una clave SSH! </summary>
+    <summary> Abreme si quieres vincular tu repositorio con una clave SSH!  :exclamation: :exclamation:  :exclamation: :exclamation: </summary>
 
 ## Vincular un repositorio con clave SSH
 
@@ -396,7 +412,7 @@ Para clonar con SSH:
 * git clone `<url_repo_SSH>`
 
 <details>
-    <summary> Abreme para ver mas información! </summary>
+    <summary> Abreme para ver mas información!  :exclamation: :exclamation:  </summary>
   
 ### Datos o comandos variados llevados durante la clase
 
