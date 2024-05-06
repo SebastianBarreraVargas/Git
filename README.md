@@ -221,6 +221,39 @@ Para crear una rama usaremos el comando:
 Cambiamos a nuestra nueva rama:
 * git switch `nombre_rama`
 
+#### Datasos curiosos
+  Si creas una copia de una rama, los id's de los commits seran los mismos :nerd_face: :point_up:
+
+  Esto pasa por que enrealidad al hacer una rama o merge estamos creando una copia de ese commit por lo que en esencia seria el mismo.
+
+## Fusionar ramas
+
+Las ramas que creamos tienden a tener el destino de ser fusionadas con otra rama (Cabe recalcar que no pasa siempre). 
+
+La fusión es que los cambios que hemos realizado en nuestra rama se incorporaran a otra. 
+
+Usaremos el siguiente comando para incorporar los cambios a la rama en la que nos encontramos en ese momento:
+
+* git merge `nombre_rama`
+
+## Eliminar ramas
+Despues de una fusión es probable que desees eliminar la rama que fusionaste para no dejarla suelta ya que ahora perdio su utilidad. Usaremos el comando:
+
+*  git branch --delete `nombre_rama`
+
+    o
+
+* git branch -d `nombre_rama`
+
+Cabe recalcar que si la rama que quieres eliminar no fue fusionada, te devolveran el siguiente error:
+
+```yaml
+error: The branch 'branch_name' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D branch_name'.
+```
+
+
+
 <details>
     <summary> Abreme para ver mas comandos! </summary>
   
@@ -233,7 +266,10 @@ Comando       |Descripción|
 | git switch -c `nombre_rama`      |Crea la rama y automaticamente te lleva a ella.|
 | git checkout -b `nombre_rama`      |Un comando mas que crea la rama y automaticamente te lleva a ella.|
 | git checkout `nombre_rama`      |Un comando mas que te cambia a la rama `nombre_rama`.|
-
+| git merge --edit      |Abre el editor antes de hacer el commit.|
+| git merge --no-commit      |Evita que se haga commit automaticamente.|
+| git branch -D `nombre_rama`      |Fuerza la eliminación de una rama.|
+| git branch -a      |Nos permite visualizar todas las ramas incluso las que estan en el remoto.|
 </div>
 
 </details>
