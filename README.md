@@ -187,9 +187,9 @@ Date:   Sun May 5 18:20:18 2024 -0400
 
 Comando       |Descripción|
 |---------------|:--------------|
-| Cambiar `tu_archivo` por .      |Esto aplica el comando a todos los archivos.|
-| git rm `tu_archivo`        |Este comando remueve un archivo de la lista de add.|
-| git commit -m "`(aqui va la info del commit)`"      |Es para hacer un commit sin abrir una ventana en VSC.|
+| Cambiar `<tu_archivo>` por .      |Esto aplica el comando a todos los archivos.|
+| git rm `<tu_archivo>`        |Este comando remueve un archivo de la lista de add.|
+| git commit -m "`<aqui va la info del commit>`"      |Es para hacer un commit sin abrir una ventana en VSC.|
 | git commit --amend -m "`<nuevo mensaje para el commit>`"        |Este comando cambia el mensaje del ultimo commit realizado.|
 | git commit -am "`<tu mensaje>`"      |Este comando hara stage y commit de todos los archivos rastreados.|
 | git checkout `<id del commit al que quieres cambiar>`      |Puedes volver a un commit anterior copiando su id en ese comando, basicamente cambiar el HEAD alli.|
@@ -215,10 +215,10 @@ Es una versión separada del repositorio principal. Al ser una linea de desarrol
  :warning: Para crear una rama debes tener almenos un commit en el repositorio!! La rama se creara en base al ultimo commit de la rama en que creaste la nueva rama.
 
 Para crear una rama usaremos el comando:
-* git branch `nombre_rama`
+* git branch `<nombre_rama>`
 
 Cambiamos a nuestra nueva rama:
-* git switch `nombre_rama`
+* git switch `<nombre_rama>`
 
 #### Datasos curiosos
   Si creas una copia de una rama, los id's de los commits seran los mismos :nerd_face: :point_up:
@@ -237,16 +237,16 @@ La fusión es que los cambios que hemos realizado en nuestra rama se incorporara
 
 Usaremos el siguiente comando para incorporar los cambios a la rama en la que nos encontramos en ese momento:
 
-* git merge `nombre_rama`
+* git merge `<nombre_rama>`
 
 ## Eliminar ramas
 Despues de una fusión es probable que desees eliminar la rama que fusionaste para no dejarla suelta ya que ahora perdio su utilidad. Usaremos el comando:
 
-*  git branch --delete `nombre_rama`
+*  git branch --delete `<nombre_rama>`
 
     o
 
-* git branch -d `nombre_rama`
+* git branch -d `<nombre_rama>`
 
 <p align="center">
   <img src="https://media.licdn.com/dms/image/D5612AQEgQz8BlpV2Ng/article-cover_image-shrink_600_2000/0/1687213388847?e=2147483647&v=beta&t=FRVXhh5Tqpel67GmW1r-7qpMIf4-ZiLDVpFRcl_gIZQ" alt="Eliminando ramas" width="250">
@@ -271,7 +271,7 @@ Nos permite hacer merges creando un commit para indicar que se hizo una fusión.
 
 Usamos el comando:
 
-* git merge `tu_rama` --no-ff
+* git merge `<tu_rama>` --no-ff
 
 ## Conflictos en Git
 
@@ -297,12 +297,12 @@ Cuando nos ocurra esto debemos seleccionar con que cambio nos quedaremos, aunque
 
 Comando       |Descripción|
 |---------------|:--------------|
-| git switch -c `nombre_rama`      |Crea la rama y automaticamente te lleva a ella.|
-| git checkout -b `nombre_rama`      |Un comando mas que crea la rama y automaticamente te lleva a ella.|
-| git checkout `nombre_rama`      |Un comando mas que te cambia a la rama `nombre_rama`.|
+| git switch -c `<nombre_rama>`      |Crea la rama y automaticamente te lleva a ella.|
+| git checkout -b `<nombre_rama>`      |Un comando mas que crea la rama y automaticamente te lleva a ella.|
+| git checkout `<nombre_rama>`      |Un comando mas que te cambia a la rama `<nombre_rama>`.|
 | git merge --edit      |Abre el editor antes de hacer el commit.|
 | git merge --no-commit      |Evita que se haga commit automaticamente.|
-| git branch -D `nombre_rama`      |Fuerza la eliminación de una rama.|
+| git branch -D `<nombre_rama>`      |Fuerza la eliminación de una rama.|
 | git branch -a      |Nos permite visualizar todas las ramas incluso las que estan en el remoto.|
 | git log --oneline      |Nos permite visualizar el historial de commits pero solo mostrandonos los nombres.|
 | git log --graph      |Nos permite visualizar el historial de commits con una ayuda grafica.|
@@ -355,7 +355,7 @@ Llenaremos los datos con la informacion de nuestro repositorio, ademas podremos 
 ## Sincronizando nuestro repositorio
 Usaremos el siguiente comando en Git para poder sincronizarnos:
 
-* git remote add `nombre_repo_remoto` `url_repo`
+* git remote add `<nombre_repo_remoto>` `<url_repo>`
 
 ### ¿Como obtengo la `url_repo`?
 
@@ -369,7 +369,7 @@ Debemos ir al apartado de `Code` dentro de nuestro repositorio, ahora al icono v
 ## Vincular un repositorio con clave SSH
 
 ### Crear la key
-* ssh-keygen -t rsa -b 4096 `tucorreo@gmail.com`
+* ssh-keygen -t rsa -b 4096 `<tucorreo@gmail.com>`
 * Al crearlo podras elegir una passphrase
 ### Pondremos a ejecutar la llave
 * eval "$(ssh-agent -s)"
@@ -386,14 +386,14 @@ Usaremos un nuevo comando llamado git push, nos permite sincronizar nuestros cam
 
 No necesariamente debe ser la rama main.
 
-* git push `nombre_repo_remoto` `rama_a_subirse`
+* git push `<nombre_repo_remoto>` `<rama_a_subirse>`
 
 ## Clonar repositorios
 Para clonar con HTTPS:
-* git clone `url_repo_HTTPS`
+* git clone `<url_repo_HTTPS>`
 
 Para clonar con SSH:
-* git clone `url_repo_SSH`
+* git clone `<url_repo_SSH>`
 
 <details>
     <summary> Abreme para ver mas información! </summary>
@@ -406,13 +406,13 @@ Comando       |Descripción|
 |---------------|:--------------|
 | Forks      |Herramienta para aportar a un codigo que no te pertenece, puedes clonartelo y añadirlo a tus repositorios, puedes subir tus cambios para que el propietario pueda añadirlo si quiere.|
 |Issues       |Es abrir un hilo, en el que comentas que errores puede tener el codigo y que se puedan realizar cambios en base a eso.|
-|git push -f `nombre_repo_remoto` `rama_a_subirse`       |Forzara a sincronizar los cambios con el repositorio remoto (no recomendado).|
-|git push -u `nombre_repo_remoto` `rama_a_subirse`       |Sube tus cambios a la rama “main” del repositorio “origin” y establece esa rama como la rama por defecto para futuros comandos git push.|
-|git push -all `nombre_repo_remoto`  |Sincroniza todas las ramas con el repo remoto.|
-|git remote prune `nombre_repo_remoto`|Borra las ramas del repositorio local que ya no existen en base al repositorio remoto.|
+|git push -f `<nombre_repo_remoto>` `<rama_a_subirse>`       |Forzara a sincronizar los cambios con el repositorio remoto (no recomendado).|
+|git push -u `<nombre_repo_remoto>` `<rama_a_subirse>`       |Sube tus cambios a la rama “main” del repositorio “origin” y establece esa rama como la rama por defecto para futuros comandos git push.|
+|git push -all `<nombre_repo_remoto>`  |Sincroniza todas las ramas con el repo remoto.|
+|git remote prune `<nombre_repo_remoto>`|Borra las ramas del repositorio local que ya no existen en base al repositorio remoto.|
 |git fetch|Se utiliza para descargar todos los datos de un repositorio remoto que no están presentes en tu repositorio local. Esto incluye nuevas ramas, actualizaciones a ramas existentes y otros cambios.|
 |git branch -a|Lista todas las ramas, tanto las locales como las remotas.|
-|git tag `nombre-de-la-etiqueta` `identificador-del-commit`|Agregas una etiqueta a un commit especifico|
+|git tag `<nombre-de-la-etiqueta>` `<identificador-del-commit>`|Agregas una etiqueta a un commit especifico|
 |git remote remove `<nombre_repo_remoto>`|Elimina un alias de repositorio remoto|
 </div>
 
