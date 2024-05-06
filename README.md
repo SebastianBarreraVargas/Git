@@ -178,7 +178,6 @@ Author: SebastianBarreraVargas <sebastinbarreravargascat2014@gmail.com>
 Date:   Sun May 5 18:20:18 2024 -0400
 ```
 
-</details>
 <details>
     <summary> Abreme para ver mas comandos! </summary>
   
@@ -232,6 +231,10 @@ Las ramas que creamos tienden a tener el destino de ser fusionadas con otra rama
 
 La fusión es que los cambios que hemos realizado en nuestra rama se incorporaran a otra. 
 
+<p align="center">
+  <img src="https://static.javatpoint.com/tutorial/git/images/git-merge-and-merge-conflict.png" alt="Gif conflictos" width="450">
+</p>
+
 Usaremos el siguiente comando para incorporar los cambios a la rama en la que nos encontramos en ese momento:
 
 * git merge `nombre_rama`
@@ -245,6 +248,10 @@ Despues de una fusión es probable que desees eliminar la rama que fusionaste pa
 
 * git branch -d `nombre_rama`
 
+<p align="center">
+  <img src="https://media.licdn.com/dms/image/D5612AQEgQz8BlpV2Ng/article-cover_image-shrink_600_2000/0/1687213388847?e=2147483647&v=beta&t=FRVXhh5Tqpel67GmW1r-7qpMIf4-ZiLDVpFRcl_gIZQ" alt="Eliminando ramas" width="250">
+</p>
+
 Cabe recalcar que si la rama que quieres eliminar no fue fusionada, te devolveran el siguiente error:
 
 ```yaml
@@ -253,6 +260,9 @@ If you are sure you want to delete it, run 'git branch -D branch_name'.
 ```
 
 ## Merge No Fast-Forward
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEX-2DuVzEOxibvIfoYAhLDMZTskvjcIUXe6nPskhFtw&s" align="right"
+     alt="Fast Forward" width="100" height="100">
 
 ### ¿Qué es un fast-forward?
 Cuando haces una fusión y los commits de esta rama estan directamente delante de la rama actual, Git hara por defecto un "fast-forward merge", lo que significa que simplemente movera el puntero de la rama actual hacia adelante ya que no hay divergencia de codigo entre las dos ramas.
@@ -267,7 +277,9 @@ Usamos el comando:
 
 Ocurren al querer fusionar a una rama que realizo cambios justo en las mismas lineas del fichero al que queremos fusionarnos.
 
-(insertar imagen aqui)
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/image.jpg" alt="Imagen tiburón" width="450">
+</p>
 
 ### Resolviendo conflictos
 Cuando nos ocurra esto debemos seleccionar con que cambio nos quedaremos, aunque tambien podriamos fusionar ambos a la rama con las opciones que nos ofrece Visual Studio.
