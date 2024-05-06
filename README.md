@@ -164,13 +164,25 @@ Para hacer un commit los archivos deben haber estado previamente en la etapa de 
   <img src="https://media.licdn.com/dms/image/C4E22AQErd4dfzpgJQg/feedshare-shrink_800/0/1667848522109?e=2147483647&v=beta&t=wUNCJD38buj0A8_U-uc_9d0kjw7cIvbq9kMdTlRzcnU" alt="Imagen control de versiones distribuidos" width="350">
 </p>
 
+## ¿Qué es el HEAD?
 
+Entiendelo como un marcador que te dice: "estás aquí"
+
+Este marca el commit en el que te encuentras actualmente y puedes verlo con `git log` y yendo al commit mas actual.
+
+Ejemplo:
+
+```yaml
+commit bd68fe7a12bedcff7f3330ec376ec1dfea2fad4b (HEAD -> main)
+Author: SebastianBarreraVargas <sebastinbarreravargascat2014@gmail.com>
+Date:   Sun May 5 18:20:18 2024 -0400
+```
 
 </details>
 <details>
     <summary> Abreme para ver mas comandos! </summary>
   
-### Comandos variados que se llevaron durante las clases
+### Comandos variados que se llevaron durante la clase
 
 <div align="center">
 
@@ -180,7 +192,9 @@ Comando       |Descripción|
 | git rm `tu_archivo`        |Este comando remueve un archivo de la lista de add.|
 | git commit -m "`(aqui va la info del commit)`"      |Es para hacer un commit sin abrir una ventana en VSC.|
 | git commit --amend -m "`<nuevo mensaje para el commit>`"        |Este comando cambia el mensaje del ultimo commit realizado.|
-| git commit -am "`<tu mensaje>`"      |este comando hara stage y commit de todos los archivos **<font color="red">rastreados</font> </summary>**|
+| git commit -am "`<tu mensaje>`"      |Este comando hara stage y commit de todos los archivos rastreados.|
+| git checkout `<id del commit al que quieres cambiar>`      |Puedes volver a un commit anterior copiando su id en ese comando, basicamente cambiar el HEAD alli.|
+
 </div>
 
 </details>
