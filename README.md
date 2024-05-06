@@ -386,6 +386,13 @@ Usaremos un nuevo comando llamado git push, nos permite sincronizar nuestros cam
 
 * git push `nombre_repo_remoto` `rama_a_subirse`
 
+## Clonar repositorios
+Para clonar con HTTPS:
+* git clone `url_repo_HTTPS`
+
+Para clonar con SSH:
+* git clone `url_repo_SSH`
+
 <details>
     <summary> Abreme para ver mas información! </summary>
   
