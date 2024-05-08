@@ -485,9 +485,9 @@ Comando       |Descripción|
 >Esta practica es muy peligrosa ya que podrias estar sobreescribiendo o perder algun archivo si fuerzas a sincronizarse a los repositorios.
 >
 ><p align="center">
->  <img src="https://preview.redd.it/git-push-force-v0-ky1rwu4yql5a1.jpg?auto=webp&s=319ce7412da353e8b69c261b1cf609dd46940f00" alt="Imagen Force" width="350">
+>  <img src="https://preview.redd.it/git-push-force-v0-ky1rwu4yql5a1.jpg?auto=webp&s=319ce7412da353e8b69c261b1cf609dd46940f00" alt="Imagen Force" width="250">
 ></p>
->Es muy recomendable no realizarla.
+>Es muy recomendable no realizarla. Aunque puede llegar a usarse para eliminar commits malos que quieren purgarse absolutamente.
 
 >## Experimento #4
 >### **Eliminar ramas remotas**
@@ -500,6 +500,26 @@ Comando       |Descripción|
 >Aclarado esto, puedes usar el siguiente comando para eliminar ramas remotas:
 >
 >* git push -d `<nombre_repo_remoto>` `<rama_a_eliminar>`
+
+<details>
+    <summary> Abreme para ver mas comandos push!  :exclamation: :exclamation:  </summary>
+  
+### Datos o comandos variados llevados durante la clase
+
+<div align="center">
+
+Comando       |Descripción|
+|---------------|:--------------|
+|git push -f `<nombre_repo_remoto>` `<rama_a_subirse>`       |Forzara a sincronizar los cambios con el repositorio remoto (no recomendado).|
+|git push -u `<nombre_repo_remoto>` `<rama_a_subirse>`       |Sube tus cambios a la rama “main” del repositorio “origin” y establece esa rama como la rama por defecto para futuros comandos git push.  Al usar este parámetro, Git recordará las opciones que has utilizado, por lo que en el futuro puedes simplemente escribir git push y Git sabrá qué hacer|
+|git push|Sincroniza la rama solo si hiciste el comando de arriba con anterioridad|
+|git push -all `<nombre_repo_remoto>`  |Sincroniza todas las ramas con el repo remoto, especificando origin.|
+|git remote prune `<nombre_repo_remoto>`|Borra las ramas del repositorio local que ya no existen en base al repositorio remoto.|
+|git push --all|Este comando empuja todas las ramas al repositorio remoto por defecto. Si no se especifica un repositorio remoto, Git utilizará el que esté configurado como el remoto por defecto.|
+|git push origin `<rama_a_subirse1>` `<rama_a_subirse2>` `<rama_a_subirseN>`|Sube multiples ramas al mismo tiempo.|
+</div>
+
+</details>
 
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
