@@ -434,5 +434,31 @@ Comando       |Descripción|
 
 </details>
 
+# Clase 4
+## Push, Pull & Pull request
+### Experimentos con git push
+> Experimento #1
+> 
+> **¿Que pasa si intento hacer git push desde una rama diferente con git push origin main?**
+>
+>Bueno en el ejemplo estamos en la rama login e intentamos hacer el comando `git push origin main`
+>```bash
+>Sebas@DESKTOP-12UFO49 >MINGW64 ~/Remake/>CursoGit (login)
+>$ git push origin main
+>Everything up-to-date
+>```
+>Lo que sucede es que el comando intenta subir todos los cambios de la rama main
+(local) pero este >ya esta con los cambios mas actuales en el remoto.
+>
+>Para subir codigo a la rama main desde una rama diferente debo usar el siguiente codigo:
+> * git push origin `<Rama_Remitente>`:`<Rama_Destinatario>`
+
+
+
+
+
+
+
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
