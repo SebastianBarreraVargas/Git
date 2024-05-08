@@ -516,7 +516,45 @@ Comando       |Descripción|
 |git push -all `<nombre_repo_remoto>`  |Sincroniza todas las ramas con el repo remoto, especificando origin.|
 |git remote prune `<nombre_repo_remoto>`|Borra las ramas del repositorio local que ya no existen en base al repositorio remoto.|
 |git push --all|Este comando empuja todas las ramas al repositorio remoto por defecto. Si no se especifica un repositorio remoto, Git utilizará el que esté configurado como el remoto por defecto.|
-|git push origin `<rama_a_subirse1>` `<rama_a_subirse2>` `<rama_a_subirseN>`|Sube multiples ramas al mismo tiempo.|
+|git push origin `<rama_a_subirse1>` `<rama_a_subirse2>` `<rama_a_subirseN>`|Sube las ramas especificadas al mismo tiempo.|
+</div>
+
+</details>
+
+## Acerca de git pull
+Git pull se utiliza para actualizar tu repositorio local con los ultimos cambios que tenga el repositorio remoto en ese momento.
+
+(insertar imagen)
+
+### Adentremonos en comandos principales
+
+El comando para hacer un git pull es simplemente:
+
+* git pull
+
+Este comando descarga los cambios del repositorio remoto y los combina con tu rama local. Si estás trabajando en una rama específica y quieres obtener los últimos cambios de esa rama en el repositorio remoto, puedes usar:
+
+* git pull `<nombre_repo_remoto>` `<nombre_rama>`
+
+Donde `<nombre_rama>` es el nombre de la rama de la que quieres obtener los cambios.
+
+### ¿Se pueden producir conflictos con git pull?
+
+Si se pueden producir ya que estas combinando cambios, pero la diferencia es que en este caso los cambios iran directamente a tu repositorio local
+
+<details>
+    <summary> Abreme para ver mas comandos push!  :exclamation: :exclamation:  </summary>
+  
+### Datos o comandos variados llevados durante la clase
+
+<div align="center">
+
+Comando       |Descripción|
+|---------------|:--------------|
+|git pull `<nombre_repo_remoto>` `<nombre_rama_a_traer>`|Puedes traerte cambios desde otra rama remota a tu rama actual con el siguiente comando. Se hara un commit indicando que se realizo esta acción.|
+|git pull --all|Atrae cambios de todas las ramas del remoto a sus respectivas ramas en el local. Sin embargo, este comando no creará nuevas ramas locales para las ramas remotas que no existen en tu repositorio local. En la clase se tuvo que hacer un git pull --set-upstream origin `<rama>` para que funcione.|
+|git pull origin `<rama_a_jalarse1>` `<rama_a_jalarse2>` `<rama_a_jalarseN>`|Jala las ramas especificadas al mismo tiempo.|
+
 </div>
 
 </details>
