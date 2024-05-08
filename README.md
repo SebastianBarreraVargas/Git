@@ -453,6 +453,33 @@ Comando       |Descripción|
 >Para subir codigo a la rama main desde una rama diferente debo usar el siguiente codigo:
 > * git push origin `<Rama_Remitente>`:`<Rama_Destinatario>`
 
+> Experimento #2
+> 
+> **La duda del push -u**
+> Cuando tu quieres subir una rama nueva de tu repositorio local al repositorio remoto tal vez lo primero que pensarias es que debes usar `git push`, pero que ocurre si lo haces?
+>
+>```bash
+>Sebas@DESKTOP-12UFO49 >MINGW64 ~/Remake/>CursoGit (login)
+>$ git push
+>fatal: The current branch login has no >upstream branch.
+>To push the current branch and set the >remote as upstream, use
+>
+>    git push --set-upstream origin login
+>
+>To have this happen automatically for branches without a tracking
+>upstream, see 'push.autoSetupRemote' in 'git help config'.
+>```
+>
+>Esto ocurre ya que tu rama no existe en el repositorio remoto, asi que deberas usar este comando:
+>
+>* git push --set-upstream origin `<rama_nueva_a_subir>`
+>
+>Pero la manera abreviada es:
+>
+>* git push -u origin `<rama_nueva_a_subir>`
+>
+>
+
 
 
 
