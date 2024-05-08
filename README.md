@@ -488,7 +488,18 @@ Comando       |Descripción|
 >  <img src="https://preview.redd.it/git-push-force-v0-ky1rwu4yql5a1.jpg?auto=webp&s=319ce7412da353e8b69c261b1cf609dd46940f00" alt="Imagen Force" width="350">
 ></p>
 >Es muy recomendable no realizarla.
+
+>## Experimento #4
+>### **Eliminar ramas remotas**
 >
+>Con esto podras eliminar ramas de tu repositorio remoto. Si bien no es necesariamente una mala practica debes tener unas cuantas precauciones a la hora de usarlo:
+>
+>* Verifica que la rama cumplio su vida util: Debes corroborar que tu rama hubiese cumplido con su proposito y su contenido ya este fusionado o ya no sea de importancia.
+>* Comunicate con los demas: Avisa que lo haras, ya que otros miembros podrian estarla usando o tener cambios que aun no subieron.
+>
+>Aclarado esto, puedes usar el siguiente comando para eliminar ramas remotas:
+>
+>* git push -d `<nombre_repo_remoto>` `<rama_a_eliminar>`
 
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
