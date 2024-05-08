@@ -437,7 +437,7 @@ Comando       |Descripción|
 # Clase 4
 ## Push, Pull & Pull request
 ### Experimentos con git push
-> Experimento #1
+> ## Experimento #1
 > 
 > **¿Que pasa si intento hacer git push desde una rama diferente con git push origin main?**
 >
@@ -453,9 +453,10 @@ Comando       |Descripción|
 >Para subir codigo a la rama main desde una rama diferente debo usar el siguiente codigo:
 > * git push origin `<Rama_Remitente>`:`<Rama_Destinatario>`
 
-> Experimento #2
+> ## Experimento #2
 > 
 > **La duda del push -u**
+>
 > Cuando tu quieres subir una rama nueva de tu repositorio local al repositorio remoto tal vez lo primero que pensarias es que debes usar `git push`, pero que ocurre si lo haces?
 >
 >```bash
@@ -477,15 +478,17 @@ Comando       |Descripción|
 >Pero la manera abreviada es:
 >
 >* git push -u origin `<rama_nueva_a_subir>`
+
+>## Experimento #3
+>**El peligro del `git push -f`**
 >
+>Esta practica es muy peligrosa ya que podrias estar sobreescribiendo o perder algun archivo si fuerzas a sincronizarse a los repositorios.
 >
-
-
-
-
-
-
-
+><p align="center">
+>  <img src="https://preview.redd.it/git-push-force-v0-ky1rwu4yql5a1.jpg?auto=webp&s=319ce7412da353e8b69c261b1cf609dd46940f00" alt="Imagen Force" width="350">
+></p>
+>Es muy recomendable no realizarla.
+>
 
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
