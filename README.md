@@ -437,69 +437,69 @@ Comando       |Descripción|
 # Clase 4
 ## Push, Pull & Pull request
 ### Experimentos con git push
-> ## Experimento #1
-> 
-> **¿Que pasa si intento hacer git push desde una rama diferente con git push origin main?**
->
->Bueno en el ejemplo estamos en la rama login e intentamos hacer el comando `git push origin main`
->```bash
->Sebas@DESKTOP-12UFO49 >MINGW64 ~/Remake/>CursoGit (login)
->$ git push origin main
->Everything up-to-date
->```
->Lo que sucede es que el comando intenta subir todos los cambios de la rama main
-(local) pero este >ya esta con los cambios mas actuales en el remoto.
->
->Para subir codigo a la rama main desde una rama diferente debo usar el siguiente codigo:
-> * git push origin `<Rama_Remitente>`:`<Rama_Destinatario>`
+ ## Experimento #1
+ 
+**¿Que pasa si intento hacer git push desde una rama diferente con git push origin main?**
 
-> ## Experimento #2
-> 
-> **La duda del push -u**
->
-> Cuando tu quieres subir una rama nueva de tu repositorio local al repositorio remoto tal vez lo primero que pensarias es que debes usar `git push`, pero que ocurre si lo haces?
->
->```bash
->Sebas@DESKTOP-12UFO49 >MINGW64 ~/Remake/>CursoGit (login)
->$ git push
->fatal: The current branch login has no >upstream branch.
->To push the current branch and set the >remote as upstream, use
->
->    git push --set-upstream origin login
->
->To have this happen automatically for branches without a tracking
->upstream, see 'push.autoSetupRemote' in 'git help config'.
->```
->
->Esto ocurre ya que tu rama no existe en el repositorio remoto, asi que deberas usar este comando:
->
->* git push --set-upstream origin `<rama_nueva_a_subir>`
->
->Pero la manera abreviada es:
->
+Bueno en el ejemplo estamos en la rama login e intentamos hacer el comando `git push origin main`
+```bash
+Sebas@DESKTOP-12UFO49 >MINGW64 ~/Remake/>CursoGit (login)
+$ git push origin main
+Everything up-to-date
+```
+Lo que sucede es que el comando intenta subir todos los cambios de la rama main
+(local) pero este >ya esta con los cambios mas actuales en el remoto.
+
+Para subir codigo a la rama main desde una rama diferente debo usar el siguiente codigo:
+ * git push origin `<Rama_Remitente>`:`<Rama_Destinatario>`
+
+ ## Experimento #2
+ 
+ **La duda del push -u**
+
+ Cuando tu quieres subir una rama nueva de tu repositorio local al repositorio remoto tal vez lo primero que pensarias es que debes usar `git push`, pero que ocurre si lo haces?
+
+```bash
+Sebas@DESKTOP-12UFO49 >MINGW64 ~/Remake/>CursoGit (login)
+$ git push
+fatal: The current branch login has no >upstream branch.
+To push the current branch and set the >remote as upstream, use
+
+    git push --set-upstream origin login
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+```
+
+Esto ocurre ya que tu rama no existe en el repositorio remoto, asi que deberas usar este comando:
+
+* git push --set-upstream origin `<rama_nueva_a_subir>`
+
+Pero la manera abreviada es:
+
 >* git push -u origin `<rama_nueva_a_subir>`
 
->## Experimento #3
->**El peligro del `git push -f`**
->
->Esta practica es muy peligrosa ya que podrias estar sobreescribiendo o perder algun archivo si fuerzas a sincronizarse a los repositorios.
->
-><p align="center">
->  <img src="https://preview.redd.it/git-push-force-v0-ky1rwu4yql5a1.jpg?auto=webp&s=319ce7412da353e8b69c261b1cf609dd46940f00" alt="Imagen Force" width="250">
-></p>
+## Experimento #3
+**El peligro del `git push -f`**
+
+Esta practica es muy peligrosa ya que podrias estar sobreescribiendo o perder algun archivo si fuerzas a sincronizarse a los repositorios.
+
+<p align="center">
+  <img src="https://preview.redd.it/git-push-force-v0-ky1rwu4yql5a1.jpg?auto=webp&s=319ce7412da353e8b69c261b1cf609dd46940f00" alt="Imagen Force" width="250">
+</p>
 >Es muy recomendable no realizarla. Aunque puede llegar a usarse para eliminar commits malos que quieren purgarse absolutamente.
 
->## Experimento #4
->### **Eliminar ramas remotas**
->
->Con esto podras eliminar ramas de tu repositorio remoto. Si bien no es necesariamente una mala practica debes tener unas cuantas precauciones a la hora de usarlo:
->
->* Verifica que la rama cumplio su vida util: Debes corroborar que tu rama hubiese cumplido con su proposito y su contenido ya este fusionado o ya no sea de importancia.
->* Comunicate con los demas: Avisa que lo haras, ya que otros miembros podrian estarla usando o tener cambios que aun no subieron.
->
->Aclarado esto, puedes usar el siguiente comando para eliminar ramas remotas:
->
->* git push -d `<nombre_repo_remoto>` `<rama_a_eliminar>`
+## Experimento #4
+### **Eliminar ramas remotas**
+
+Con esto podras eliminar ramas de tu repositorio remoto. Si bien no es necesariamente una mala practica debes tener unas cuantas precauciones a la hora de usarlo:
+
+* Verifica que la rama cumplio su vida util: Debes corroborar que tu rama hubiese cumplido con su proposito y su contenido ya este fusionado o ya no sea de importancia.
+* Comunicate con los demas: Avisa que lo haras, ya que otros miembros podrian estarla usando o tener cambios que aun no subieron.
+
+Aclarado esto, puedes usar el siguiente comando para eliminar ramas remotas:
+
+* git push -d `<nombre_repo_remoto>` `<rama_a_eliminar>`
 
 <details>
     <summary> Abreme para ver mas comandos push!  :exclamation: :exclamation:  </summary>
@@ -524,7 +524,7 @@ Comando       |Descripción|
 ## Acerca de git pull
 Git pull se utiliza para actualizar tu repositorio local con los ultimos cambios que tenga el repositorio remoto en ese momento.
 
-(insertar imagen)
+
 
 ### Adentremonos en comandos principales
 
@@ -537,6 +537,8 @@ Este comando descarga los cambios del repositorio remoto y los combina con tu ra
 * git pull `<nombre_repo_remoto>` `<nombre_rama>`
 
 Donde `<nombre_rama>` es el nombre de la rama de la que quieres obtener los cambios.
+
+
 
 ### ¿Se pueden producir conflictos con git pull?
 
@@ -586,14 +588,14 @@ NOTA :exclamation: :exclamation: : No puedes revertir un pull request si ya lo a
 
 ### ¿Como hago un buen Pull Request?
 Aqui dejare algunas pautas para tener buenas practicas:
->1. Haz commits pequeños y significativos: Cada commit debe representar un cambio lógico y coherente. Esto facilita la revisión del código y la identificación de posibles errores.
+1. Haz commits pequeños y significativos: Cada commit debe representar un cambio lógico y coherente. Esto facilita la revisión del código y la identificación de posibles errores.
 Escribe mensajes de commit claros: Un buen mensaje de commit describe lo que cambió y por qué. Esto ayuda a los revisores a entender tus cambios y el razonamiento detrás de ellos.
->2. Actualiza tu rama antes de hacer el Pull Request: Antes de crear un Pull Request, asegúrate de que tu rama esté actualizada con la última versión de la rama a la que quieres fusionar tus cambios. Esto puede evitar conflictos de fusión.
->3. Describe claramente tu Pull Request: Al igual que con los mensajes de commit, la descripción de tu Pull Request debe explicar qué cambios hiciste, por qué son necesarios y cualquier detalle importante que los revisores deban saber.
->4. Sigue las convenciones del proyecto: Cada proyecto puede tener sus propias convenciones y guías de estilo. Asegúrate de seguir estas convenciones para mantener la coherencia del código.
->5. Prueba tus cambios: Antes de hacer un Pull Request, debes probar tus cambios para asegurarte de que funcionan como se espera y no introducen nuevos errores.
->6. Solicita revisiones de código: Solicita la revisión de tu código a tus compañeros de equipo. Ellos pueden ofrecerte valiosos comentarios y sugerencias para mejorar tu código.
->7. Sé receptivo a los comentarios: Los comentarios y sugerencias de los revisores pueden ayudarte a mejorar tu código. Acepta estos comentarios con una actitud abierta y dispuesta a aprender.
+2. Actualiza tu rama antes de hacer el Pull Request: Antes de crear un Pull Request, asegúrate de que tu rama esté actualizada con la última versión de la rama a la que quieres fusionar tus cambios. Esto puede evitar conflictos de fusión.
+3. Describe claramente tu Pull Request: Al igual que con los mensajes de commit, la descripción de tu Pull Request debe explicar qué cambios hiciste, por qué son necesarios y cualquier detalle importante que los revisores deban saber.
+4. Sigue las convenciones del proyecto: Cada proyecto puede tener sus propias convenciones y guías de estilo. Asegúrate de seguir estas convenciones para mantener la coherencia del código.
+5. Prueba tus cambios: Antes de hacer un Pull Request, debes probar tus cambios para asegurarte de que funcionan como se espera y no introducen nuevos errores.
+6. Solicita revisiones de código: Solicita la revisión de tu código a tus compañeros de equipo. Ellos pueden ofrecerte valiosos comentarios y sugerencias para mejorar tu código.
+7. Sé receptivo a los comentarios: Los comentarios y sugerencias de los revisores pueden ayudarte a mejorar tu código. Acepta estos comentarios con una actitud abierta y dispuesta a aprender.
 
 ### Revisar un pull request
 Algunas recomendaciones para revisar una PR son:
