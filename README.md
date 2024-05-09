@@ -559,5 +559,50 @@ Comando       |Descripción|
 
 </details>
 
+## Pull Request (PR)
+
+Es una propuesta para incluir tus cambios en el código (commits) de una rama a otra, generalmente de una rama de trabajo a la rama principal del proyecto.
+
+Los responsables del repositorio evaluaran los cambios que has hecho, discutir posibles modificaciones, y si están de acuerdo, pueden fusionar tus cambios en la rama objetivo.
+
+<p align="center">
+  <img src="https://media-assets-cdn.zenduty.com/blogscontent/2023/12/Pull_request.webp" alt="Imagen PullRequest" width="700">
+</p>
+
+### ¿Como se hace?
+#### **Opcion 1**
+1. Cuando hagas un git push en tu git hub te deberia aparecer una ventana en la que podrias hacerlo  (si es que no apareciera podrias ir al apartado de `Pull Request`).
+2. Darle un titulo y una descripción.
+3. Git Hub hara verificaciones y si no hay conflictos tu solicitud procedera.
+#### **Opcion2**
+1. Ir al apartado de `Pull Request`
+2. Apretar en `New pull request`
+3. Elegir una rama base a la que se llevaran los cambios (a la izquierda) y la rama que se va a combinar (derecha).
+(insertar ejemplo foto)
+4. Darle un titulo y una descripción.
+5. Git Hub hara verificaciones y si no hay conflictos tu solicitud procedera.
+
+NOTA :exclamation: :exclamation: : No puedes revertir un pull request si ya lo añadiste!!! (aunque podrias hacerle cambios)
+
+### ¿Como hago un buen Pull Request?
+Aqui dejare algunas pautas para tener buenas practicas:
+>1. Haz commits pequeños y significativos: Cada commit debe representar un cambio lógico y coherente. Esto facilita la revisión del código y la identificación de posibles errores.
+Escribe mensajes de commit claros: Un buen mensaje de commit describe lo que cambió y por qué. Esto ayuda a los revisores a entender tus cambios y el razonamiento detrás de ellos.
+>2. Actualiza tu rama antes de hacer el Pull Request: Antes de crear un Pull Request, asegúrate de que tu rama esté actualizada con la última versión de la rama a la que quieres fusionar tus cambios. Esto puede evitar conflictos de fusión.
+>3. Describe claramente tu Pull Request: Al igual que con los mensajes de commit, la descripción de tu Pull Request debe explicar qué cambios hiciste, por qué son necesarios y cualquier detalle importante que los revisores deban saber.
+>4. Sigue las convenciones del proyecto: Cada proyecto puede tener sus propias convenciones y guías de estilo. Asegúrate de seguir estas convenciones para mantener la coherencia del código.
+>5. Prueba tus cambios: Antes de hacer un Pull Request, debes probar tus cambios para asegurarte de que funcionan como se espera y no introducen nuevos errores.
+>6. Solicita revisiones de código: Solicita la revisión de tu código a tus compañeros de equipo. Ellos pueden ofrecerte valiosos comentarios y sugerencias para mejorar tu código.
+>7. Sé receptivo a los comentarios: Los comentarios y sugerencias de los revisores pueden ayudarte a mejorar tu código. Acepta estos comentarios con una actitud abierta y dispuesta a aprender.
+
+### Revisar un pull request
+Algunas recomendaciones para revisar una PR son:
+
+* Comprender el contexto: Antes de comenzar la revisión, asegúrate de entender por qué se está haciendo la Pull Request y qué problema está tratando de resolver.
+* Comprobar la coherencia del código: Asegúrate de que el código sigue las convenciones de codificación y estilo del proyecto.
+* Buscar posibles errores: Revisa el código en busca de posibles errores, problemas de rendimiento, seguridad, etc.
+* Dar feedback constructivo: Cuando encuentres problemas, proporciona comentarios claros y constructivos. Explica por qué algo es un problema y, si es posible, sugiere una solución.
+* Aprender y compartir conocimientos: Las revisiones de código son una excelente oportunidad para aprender y compartir conocimientos. Si ves algo que no entiendes, pregunta. Si ves algo impresionante, dilo.
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
