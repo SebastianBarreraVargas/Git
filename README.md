@@ -646,5 +646,20 @@ Deberemos seguir una serie de postulados para asi garantizar un codigo listo par
   * El grupo discute y/o da recomendaciones.
   * Se hacen pruebas de CI (Integracion Continua)/Entorno de produccion.
 
+  ## Trunk Based Development
+
+Nota: Segun lo dicho en clases esto es solo para tryhards :nerd_face: :point_up:
+
+Tiene cierta similitud con GitHub Flow, tenemos estas ramas:
+
+* `Main` 
+* `Feature`
+
+No necesariamente requiere de un Pull Request ya que en casos de arreglos ligeros para arreglar cosas no tan importantes haciendoles commit dentro del main. 
+
+(insertar imagen)
+
+Se pueden llegar a usar `actions` para automatizar ciertas areas para el despliegue.
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
