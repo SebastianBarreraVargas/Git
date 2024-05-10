@@ -678,5 +678,21 @@ Dicha y hecha la advertencia, exliquemos como funciona:
 
 Es importante que para hacer este flujo exista un buen sistema CI/CD, un equipo confiable con buenas practicas que haya superado el ego individual.
 
+# Clase6
+## Buenas practicas en Git
+Al igual que a la hora de programar, tambien tenemos buenas practicas a la hora de usar git, estos tienen propositos similares que las buenas practicas de programación, aun asi haremos un repaso de ellos:
+
+* Mejor legibilidad para otros usuarios.
+* Resolver conflictos sera mas facil.
+* Te sera mas facil adaptarte a otros entornos de trabajo.
+
+## Preguntas que podrias estarte haciendo
+
+### ¿Cada cuanto hago un commit?
+De preferencia amenudo, tipo es mejor que hagas cambios pequeños, no es bueno hacer un commit con 40 kilometros de recorrido ya que los errores que cometas seran mas dificiles de arreglas.
+
+Esto no significa que hagas un commit de cosas sin sentido, hacelas con criterio.
+
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
