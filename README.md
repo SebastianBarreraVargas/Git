@@ -693,6 +693,25 @@ De preferencia amenudo, tipo es mejor que hagas cambios pequeños, no es bueno h
 
 Esto no significa que hagas un commit de cosas sin sentido, hacelas con criterio.
 
+### ¿Como escribo buenos commits?
+
+Bueno hay ciertas reglas/consejos que deberias seguir para que tengas mejores commits, te dare algunos ejemplos de ellas:
+
+* Hace tus commits en verbo imperativo.
+* No uses punto final ni suspensivos en tus commits.
+* Maximo 50 caracteres, tipo mantente en un margen cerca de 50 no pasa nada si te pasas por un poco.
+* Añade el contexto necesario.
+* Usa prefijos para especificar que tipo de commit es ejemplo:
+  * `feat`: Una nueva característica para el usuario.
+  * `fix`: Arregla un bug que afecta al usuario.
+  * `perf`: Cambios que mejoran el rendimiento del sitio.
+  * `build`: Cambios en el sistema de build, tareas de despliegue o instalación.
+  * `ci`: Cambios en la integración continua.
+  * `docs`: Cambios en la documentación.
+  * `refactor`: Refactorización del código como cambios de nombre de variables o funciones.
+  * `style`: Cambios de formato, tabulaciones, espacios o puntos y coma, etc; no afectan al usuario.
+  * `test`: Añade tests o refactoriza uno existente.
+
 
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
