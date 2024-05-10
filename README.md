@@ -608,5 +608,27 @@ Algunas recomendaciones para revisar una PR son:
 * Dar feedback constructivo: Cuando encuentres problemas, proporciona comentarios claros y constructivos. Explica por qué algo es un problema y, si es posible, sugiere una solución.
 * Aprender y compartir conocimientos: Las revisiones de código son una excelente oportunidad para aprender y compartir conocimientos. Si ves algo que no entiendes, pregunta. Si ves algo impresionante, dilo.
 
+# Clase 5
+## Flujos de trabajo
+Los flujos de trabajo son maneras de organizar nuestras ramas y archivos durante el trabajo en equipo en un repositorio remoto.
+Algunos ejemplos son:
+
+* GitFlow
+* GitHub Flow
+* Trunk Based Development
+* Forking Flow
+
+Hablaremos un poco acerca de ellos:
+## GitFlow
+Siendo uno de los flujos mas antiguos, actualmente a perdido algo de popularidad viendose opacado por otros flujos de trabajo, aun asi es de los mas importantes, tiene la siguiente estructura:
+
+(insertar imagen)
+
+1. Main: Contiene el codigo en produccion, almacena el historial de lanzamientos (no se toca directamente esta rama, solo para hotfix)
+2. Develop: Esta rama nace directamente del main y contiene el codigo en pre-produccion,sirve como una rama de integracion para las caracteristicas.
+3. Feature: Estas ramas nacen de los develop, aqui se integran funcionalidades.
+4. Release: Se crean para preparar/mantener/registrar lanzamientos. Las correciones de errores deben ser aplicadas a esta rama antes de fusionarlas con el main.
+5. Hotfix: Puede llegar a generar confusion con la rama Release pero la diferencia clave es que estas se crean directamente del main y corrigen errores puntuales en este, posteriormente se fusionan con el main y develop.
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
