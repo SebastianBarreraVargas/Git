@@ -630,5 +630,21 @@ Siendo uno de los flujos mas antiguos, actualmente a perdido algo de popularidad
 4. Release: Se crean para preparar/mantener/registrar lanzamientos. Las correciones de errores deben ser aplicadas a esta rama antes de fusionarlas con el main.
 5. Hotfix: Puede llegar a generar confusion con la rama Release pero la diferencia clave es que estas se crean directamente del main y corrigen errores puntuales en este, posteriormente se fusionan con el main y develop.
 
+## GitHub Flow
+
+Un flujo de trabajo con menos ramas que GitFlow, por esto es mucho mas ligero. Aqui se trabaja en un entorno de implementacion continua, no hay lanzamientos ya que ni bien se acaba una funcion esta esta disponible en ese preciso momento.
+
+(insertar imagen)
+
+Deberemos seguir una serie de postulados para asi garantizar un codigo listo para la produccion. Tendremos dos ramas:
+
+* **Main** : La rama en la que se integraran los cambios. Debe mantenerse protegido el `Main` asi que no se realizaran cambios directamente encima de este.
+* **Feature** : Esta nace directo de la rama `main`, la vida de estas ramas debe ser lo mas corta posible. Cabe mencionar que con este tipo de flujo de trabajo tendremos que crear muchisimas ramas. Hablemos un poco del ciclo de vida de estas ramas:
+
+  * Relizamos los commits.
+  * Hacemos la Pull Request.
+  * El grupo discute y/o da recomendaciones.
+  * Se hacen pruebas de CI (Integracion Continua)/Entorno de produccion.
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
