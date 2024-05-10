@@ -661,5 +661,16 @@ No necesariamente requiere de un Pull Request ya que en casos de arreglos ligero
 
 Se pueden llegar a usar `actions` para automatizar ciertas areas para el despliegue.
 
+## Ship / Show / Ask
+Nota: Segun lo dicho en clases esto es solo para tryhards :nerd_face: :point_up:
+
+Dicha y hecha la advertencia, exliquemos como funciona:
+
+* `Ship`: Los cambios son directamente fusionados a la rama principal. Esto es si estas muy seguro de lo que estas haciendo.
+* `Show`: Fusionara el codigo a la rama principal pero abrira una peticion de cambios para que lo revisen. Para personas que dudan un poco de lo que estan haciendo.
+* `Ask`: Abre la PR para que sean revisados antes de fusionarse. Para personas inexpertas o que quieren que otros le aconsejen.
+
+Es importante que para hacer este flujo exista un buen sistema CI/CD, un equipo confiable con buenas practicas que haya superado el ego individual.
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
