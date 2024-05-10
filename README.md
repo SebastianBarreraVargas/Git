@@ -524,7 +524,9 @@ Comando       |Descripción|
 ## Acerca de git pull
 Git pull se utiliza para actualizar tu repositorio local con los ultimos cambios que tenga el repositorio remoto en ese momento.
 
-
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/images.jpeg" alt="Imagen Pull" width="450">
+</p>
 
 ### Adentremonos en comandos principales
 
@@ -537,8 +539,6 @@ Este comando descarga los cambios del repositorio remoto y los combina con tu ra
 * git pull `<nombre_repo_remoto>` `<nombre_rama>`
 
 Donde `<nombre_rama>` es el nombre de la rama de la que quieres obtener los cambios.
-
-
 
 ### ¿Se pueden producir conflictos con git pull?
 
@@ -580,7 +580,9 @@ Los responsables del repositorio evaluaran los cambios que has hecho, discutir p
 1. Ir al apartado de `Pull Request`
 2. Apretar en `New pull request`
 3. Elegir una rama base a la que se llevaran los cambios (a la izquierda) y la rama que se va a combinar (derecha).
-(insertar ejemplo foto)
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Imagen%20alternativa%20pull%20request.png" alt="Imagen Referencia" width="450">
+</p>
 4. Darle un titulo y una descripción.
 5. Git Hub hara verificaciones y si no hay conflictos tu solicitud procedera.
 
