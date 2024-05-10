@@ -712,6 +712,10 @@ Bueno hay ciertas reglas/consejos que deberias seguir para que tengas mejores co
   * `style`: Cambios de formato, tabulaciones, espacios o puntos y coma, etc; no afectan al usuario.
   * `test`: Añade tests o refactoriza uno existente.
 
+### ¿Como hago buenos nombres de rama?
+Se consistente al crear tus nombres de rama, ademas es recomendable describir el proposito de la rama en esta ejemplo: 
+
+* feature/add_new_class
 
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
