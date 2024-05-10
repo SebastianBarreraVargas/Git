@@ -622,7 +622,9 @@ Hablaremos un poco acerca de ellos:
 ## GitFlow
 Siendo uno de los flujos mas antiguos, actualmente a perdido algo de popularidad viendose opacado por otros flujos de trabajo, aun asi es de los mas importantes, tiene la siguiente estructura:
 
-(insertar imagen)
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:800/1*u4dlEq4sqIT6iHL_Usvwnw.png" alt="Imagen GitFlow" width="450">
+</p>
 
 1. Main: Contiene el codigo en produccion, almacena el historial de lanzamientos (no se toca directamente esta rama, solo para hotfix)
 2. Develop: Esta rama nace directamente del main y contiene el codigo en pre-produccion,sirve como una rama de integracion para las caracteristicas.
@@ -634,7 +636,9 @@ Siendo uno de los flujos mas antiguos, actualmente a perdido algo de popularidad
 
 Un flujo de trabajo con menos ramas que GitFlow, por esto es mucho mas ligero. Aqui se trabaja en un entorno de implementacion continua, no hay lanzamientos ya que ni bien se acaba una funcion esta esta disponible en ese preciso momento.
 
-(insertar imagen)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/6351798/48032310-63842400-e114-11e8-8db0-06dc0504dcb5.png" alt="Imagen GitHub Flow" width="450">
+</p>
 
 Deberemos seguir una serie de postulados para asi garantizar un codigo listo para la produccion. Tendremos dos ramas:
 
@@ -657,7 +661,9 @@ Tiene cierta similitud con GitHub Flow, tenemos estas ramas:
 
 No necesariamente requiere de un Pull Request ya que en casos de arreglos ligeros para arreglar cosas no tan importantes haciendoles commit dentro del main. 
 
-(insertar imagen)
+<p align="center">
+  <img src="https://statusneo.com/wp-content/uploads/2022/08/tbd_workflow.drawio-1-1.png" alt="Imagen PullRequest" width="450">
+</p>
 
 Se pueden llegar a usar `actions` para automatizar ciertas areas para el despliegue.
 
