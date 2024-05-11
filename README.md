@@ -723,7 +723,9 @@ Se consistente al crear tus nombres de rama, ademas es recomendable describir el
 
 Hay que deshacer cambios cuando por ejemplo tenemos un error grave que queremos corregir pero se complica, entonces es prudente volver a un punto anterior. Tambien puede usarse para recuperar archivos borrados.
 
-(insertar imagen)
+<p align="center">
+  <img src="https://asjordi.dev/_astro/cover.BWPm3lhd_CGrGv.webp" alt="Imagen PullRequest" width="450">
+</p>
 
 ## Comandos destructivos
 
