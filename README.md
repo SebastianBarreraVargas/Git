@@ -742,5 +742,20 @@ Comando       |Descripción|
 
 Es peligroso hacer comandos destructivos cuando trabajas con mas personas ya que el id cambia. Y si tu lo pusheas, habra problemas cuando ellos lo bajen.
 
+## Comandos no destructivos
+
+Estos comandos no alteran el historial de commits.
+
+<div align="center">
+
+Comando       |Descripción|
+|---------------|:--------------|
+|git revert HEAD~`<numero_de_commit>` o con git revert HEAD`<id_commit>`|Revierte los cambios que un commit introdujo y crea uno nuevo con los cambios revertidos.|
+|git revert --abort|Aborta el revert.|
+|git revert --continue|Continua con el revert luego de solucionar conflictos. (si es que hubiese)|
+|git checkout `id_commit`|Con este comando podemos volver a una etapa anterior de nuestro codigo, ahi podras observar como se encontraba tu codigo en ese commit.|
+|git checkout `<id_commit>` `<archivo_recuperar>`|Puede traer un archivo en especifico del pasado y agregarlo en el presente.|
+</div>
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
