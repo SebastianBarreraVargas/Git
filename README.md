@@ -717,5 +717,30 @@ Se consistente al crear tus nombres de rama, ademas es recomendable describir el
 
 * feature/add_new_class
 
+# Clase 7
+
+## Deshacer cambios
+
+Hay que deshacer cambios cuando por ejemplo tenemos un error grave que queremos corregir pero se complica, entonces es prudente volver a un punto anterior. Tambien puede usarse para recuperar archivos borrados.
+
+(insertar imagen)
+
+## Comandos destructivos
+
+Estos pueden llegar a alterar el historial de commits. Lo opuesto serian los no destructivos, estos trabajan en base al historial sin afectarlo, se basan en este para crear nuevos commits.
+
+<div align="center">
+
+Comando       |Descripción|
+|---------------|:--------------|
+|git reset --soft `id_commit_que_quieres_ir` o  tambien git reset --soft HEAD~`tu_numero_de_commit`|Mantiene los cambios que ocurrieron antes de hacer commit de donde apunta. Quita la capacidad de volver a puntos futuros.|
+|git reset --hard `id_commit_que_quieres_ir` o tambien git reset --hard HEAD~`tu_numero_de_commit`|Descarta todos los cambios. Quita la capacidad de volver a puntos futuros.|
+| git commit --amend -m "`<nuevo mensaje para el commit>`"        |Este comando cambia el mensaje del ultimo commit realizado.|
+|git push -f `<nombre_repo_remoto>` `<rama_a_subirse>`       |Forzara a sincronizar los cambios con el repositorio remoto (no recomendado).|
+
+</div>
+
+Es peligroso hacer comandos destructivos cuando trabajas con mas personas ya que el id cambia. Y si tu lo pusheas, habra problemas cuando ellos lo bajen.
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
