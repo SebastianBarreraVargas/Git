@@ -840,5 +840,27 @@ Si haces esto podras ejecutar tu comando con:
 
 * git `<nombre_alias>`
 
+## Algunos trucos de Git
+
+#### Guardar cambios temporalmente
+
+* git stash
+
+Cuando tienes archivos que no estan terminados en una rama y quieres cambiarte de rama pero no quieres hacer `git commit` podrias usar este comando, lo que hara es guardarlos en una lista. Para verla:
+
+* git stash show
+
+Para retomar tu trabajo y sacar los cambios de esa lista puedes usar:
+
+* git stash pop
+
+#### Detectar que commit introdujo un bug
+
+* git bisect
+
+Nota: Muchas gracias por leer, este es el fin de este documento que recopilo comandos de las clases de Winsor (el vicepresidente de la SCESI) y ademas muestra algunos comandos/información extra, el objetivo de este README fue que las personas que vayan a leer esto en un futuro puedan entender la función de diversos comandos y funcionalidades de Git, espero tengan un buen dia/tarde/noche.
+
+**11 de mayo de 2024.**
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
