@@ -822,5 +822,23 @@ Esta es una forma de introducir hooks para tu servidor, es una heramienta increi
 
 (imagen 2 + imagen 3)
 
+**Nota:** No profundizaremos en tema de crear nuestras propias github actions ya que por lo menos en mi caso no lo llegare a implementar, pero en resumen para crear una github actions debes crear las mismas carpetas que se ven en la imagen 3 e introducir tu codigo personalizado enun archivo .yml posteriormente deberashacer commit y pushearlo a tu repo remoto, de esta forma estarias creando tus propios `Hooks` en github.
+
+## ¿Qué son los alias?
+
+Son formas de resumir comandos en Git. Un ejemplo de `alias` es el origin que usas para hacer push o pull, ya que estos resumen la parte de tu url.
+
+(agregar imagen alias)
+
+### ¿Como creo un alias?
+
+Para crear un alias debes hacer el siguiente comando:
+
+* git config --global alias.`<nombre_alias>` `<comando_a_ejecutar>`
+
+Si haces esto podras ejecutar tu comando con:
+
+* git `<nombre_alias>`
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
