@@ -583,10 +583,16 @@ Los responsables del repositorio evaluaran los cambios que has hecho, discutir p
 <p align="center">
   <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Imagen%20alternativa%20pull%20request.png" alt="Imagen Referencia" width="450">
 </p>
+
 4. Darle un titulo y una descripción.
+
 5. Git Hub hara verificaciones y si no hay conflictos tu solicitud procedera.
 
-NOTA :exclamation: :exclamation: : No puedes revertir un pull request si ya lo añadiste!!! (aunque podrias hacerle cambios)
+NOTA :exclamation: :exclamation: : No puedes revertir un pull request si ya lo añadiste!!! Asi que ten cuidado al revisarlos, no pongas que si a todo!!!(aunque podrias hacerle cambios)
+
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/Captura%20de%20pantalla%202024-05-10%20192454.png" alt="Imagen Referencia" width="450">
+</p>
 
 ### ¿Como hago un buen Pull Request?
 Aqui dejare algunas pautas para tener buenas practicas:
