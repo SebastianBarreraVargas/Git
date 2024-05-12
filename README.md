@@ -778,7 +778,9 @@ Un hook es una especie de automatización que ocurrira cuando ocurran determinad
 
 Por ejemplo, puedes usar un hook para ejecutar un proceso de comprobación de los nombres de los commits, evitando que se hagan a menos que tengan un prefijo.
 
-(imagen hooks)
+<p align="center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgxA9FAxqJ9BK-d4O9wAx-pTFzMyqXXFp9rLuiwkH2sg&s" alt="Imagen Referencia" width="350">
+</p>
 
  ### Hooks del lado del cliente:
 
@@ -797,23 +799,33 @@ Tipos de hooks:
 
 * Primero: Deberemos ir a la carpeta de nuestro proyecto y habilitar la visualización de archivos ocultos.
 
-(imagen 1)
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/PrimeraImagenHooks.png" alt="Imagen Referencia" width="500">
+</p>
 
 * Segundo: Entraremos en la carpeta .git, esta carpeta es crucial para la integridad de tu proyecto asi que te ruego no tocar cosas que no sabes. (Lo comprobe toqueteando en otro proyecto de prueba).
 
-(imagen 2)
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/SegundaImagenHooks%2B%7D.png" alt="Imagen Referencia" width="500">
+</p>
 
 * Tercero: Abre la carpeta hooks aqui encontraras varios hooks de muestra.
 
-(imagen 3)
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/terceraImagenHooks.png" alt="Imagen Referencia" width="500">
+</p>
 
 * Cuarto: Crea una copia del .sample y cambia el nombre de tu copia a un tipo de hook que tu desees. Abre el hook con un edito de codigo y posteriormente crea el codigo necesario para tu hook.
 
-(imagen 4)
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/cuartaImagenHooks.png" alt="Imagen Referencia" width="500">
+</p>
 
 * Quinto: Quitale el .sample a tu archivo. (En esta imagen usamos git para quitarlo pero podrias usar el edito de windows no hay problema)
 
-(quinta imagen)
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/quintaImagenHooks.png" alt="Imagen Referencia" width="500">
+</p>
 
 Nota: Si quieres que otra persona tenga tus hooks debes pasarle tu archivo y el debe añadirlo a su carpeta hooks.
 
@@ -825,11 +837,19 @@ Esta es una forma de introducir hooks para tu servidor, es una heramienta increi
 
 1. Ir a la pestaña actions de tu repo remoto:
 
-(añadir imagen)
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/GithubActionsParte1.png" alt="Imagen Referencia" width="350">
+</p>
 
 2. Buscar alguno que te interese y agregarlo.
 
-(imagen 2 + imagen 3)
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/GithubActionsParte1-1.png" alt="Imagen Referencia" width="350">
+</p>
+
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/GithubActionsParte1-1.2.png" alt="Imagen Referencia" width="350">
+</p>
 
 **Nota:** No profundizaremos en tema de crear nuestras propias github actions ya que por lo menos en mi caso no lo llegare a implementar, pero en resumen para crear una github actions debes crear las mismas carpetas que se ven en la imagen 3 e introducir tu codigo personalizado enun archivo .yml posteriormente deberashacer commit y pushearlo a tu repo remoto, de esta forma estarias creando tus propios `Hooks` en github.
 
@@ -837,7 +857,9 @@ Esta es una forma de introducir hooks para tu servidor, es una heramienta increi
 
 Son formas de resumir comandos en Git. Un ejemplo de `alias` es el origin que usas para hacer push o pull, ya que estos resumen la parte de tu url.
 
-(agregar imagen alias)
+<p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/GitAlias1.png" alt="Imagen Referencia" width="350">
+</p>
 
 ### ¿Como creo un alias?
 
