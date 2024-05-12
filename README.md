@@ -806,5 +806,21 @@ Tipos de hooks:
 
 (quinta imagen)
 
+Nota: Si quieres que otra persona tenga tus hooks debes pasarle tu archivo y el debe añadirlo a su carpeta hooks.
+
+## GitHub Actions
+
+Esta es una forma de introducir hooks para tu servidor, es una heramienta increible ya que no solamente te permite crear pasos para correr cosas en tu CI/CD, incluso te permite añadir "hooks" que otras personas ya hicieron lo cual es muy comodo y practico.
+
+* Para añadir `Github Actions` que otras personas ya hicieron debes seguir los siguientes pasos:
+
+1. Ir a la pestaña actions de tu repo remoto:
+
+(añadir imagen)
+
+2. Buscar alguno que te interese y agregarlo.
+
+(imagen 2 + imagen 3)
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
