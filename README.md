@@ -784,5 +784,27 @@ Tipos de hooks:
 * pre-push
 * post-checkout y post-merge
 
+## ¿Como añado un hook a mi repositorio local?
+
+* Primero: Deberemos ir a la carpeta de nuestro proyecto y habilitar la visualización de archivos ocultos.
+
+(imagen 1)
+
+* Segundo: Entraremos en la carpeta .git, esta carpeta es crucial para la integridad de tu proyecto asi que te ruego no tocar cosas que no sabes. (Lo comprobe toqueteando en otro proyecto de prueba).
+
+(imagen 2)
+
+* Tercero: Abre la carpeta hooks aqui encontraras varios hooks de muestra.
+
+(imagen 3)
+
+* Cuarto: Crea una copia del .sample y cambia el nombre de tu copia a un tipo de hook que tu desees. Abre el hook con un edito de codigo y posteriormente crea el codigo necesario para tu hook.
+
+(imagen 4)
+
+* Quinto: Quitale el .sample a tu archivo. (En esta imagen usamos git para quitarlo pero podrias usar el edito de windows no hay problema)
+
+(quinta imagen)
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
