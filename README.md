@@ -848,11 +848,11 @@ Esta es una forma de introducir hooks para tu servidor, es una heramienta increi
 2. Buscar alguno que te interese y agregarlo.
 
 <p align="center">
-  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/GithubActionsParte1-1.png" alt="Imagen Referencia" width="350">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/GithubActionsParte1-1.png" alt="Imagen Referencia" width="550">
 </p>
 
 <p align="center">
-  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/GithubActionsParte1-1.2.png" alt="Imagen Referencia" width="350">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/GithubActionsParte1-1.2.png" alt="Imagen Referencia" width="550">
 </p>
 
 **Nota:** No profundizaremos en tema de crear nuestras propias github actions ya que por lo menos en mi caso no lo llegare a implementar, pero en resumen para crear una github actions debes crear las mismas carpetas que se ven en la imagen 3 e introducir tu codigo personalizado enun archivo .yml posteriormente deberashacer commit y pushearlo a tu repo remoto, de esta forma estarias creando tus propios `Hooks` en github.
