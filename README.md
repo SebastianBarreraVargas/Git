@@ -759,5 +759,30 @@ Comando       |Descripción|
 |git checkout `<id_commit>` `<archivo_recuperar>`|Puede traer un archivo en especifico del pasado y agregarlo en el presente.|
 </div>
 
+# Clase 8
+
+## Hooks
+
+### ¿Qué es un hook?
+
+Un hook es una especie de automatización que ocurrira cuando ocurran determinados eventos. Nos permiten personalizar el comportamiento de Git.
+
+Por ejemplo, puedes usar un hook para ejecutar un proceso de comprobación de los nombres de los commits, evitando que se hagan a menos que tengan un prefijo.
+
+(imagen hooks)
+
+ ### Hooks del lado del cliente:
+
+Solo afectan al repositorio local en el que estan y su mayor desventaja es que sus acciones solo ocurriran para ti, siendo que tu equipo no tendra estos beneficios.
+
+Tipos de hooks:
+
+* pre-commit
+* prepare-commit-msg
+* commit-msg
+* post-commit
+* pre-push
+* post-checkout y post-merge
+
 [logo-SCESI]: https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/scesi-para-fondo-claro-1.png
 [enlaceSCESI]: https://www.scesi.org
