@@ -214,6 +214,10 @@ Es una versión separada del repositorio principal. Al ser una linea de desarrol
 
  :warning: Para crear una rama debes tener almenos un commit en el repositorio!! La rama se creara en base al ultimo commit de la rama en que creaste la nueva rama.
 
+ <p align="center">
+  <img src="https://github.com/SebastianBarreraVargas/Git/blob/main/Imagenes/a5.gif" alt="Imagen Referencia" width="350">
+</p>
+
 Para crear una rama usaremos el comando:
 * git branch `<nombre_rama>`
 
